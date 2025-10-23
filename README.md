@@ -8,23 +8,24 @@
 - Реверс рядків  
 - Кольоровий вивід (жовтий)  
 - Повна сумісність із Docker — без встановлення Python локально
+##  Як запустити
+Завдяки GitHub Actions, Docker-образ **автоматично збирається та публікується** у Docker Hub після кожного оновлення репозиторію.  
+Тому вам не потрібно нічого встановлювати або збирати вручну — достатньо мати **Docker**.
 
-##  Використання
-1.Потрібно увійти за допомогою команди docker login
+### 1. 
+Потрібно увійти за допомогою команди docker login
 Введіть свій ім’я користувача та пароль
-2.Завантажте образ (pull)
+Завантажте готовий образ
 docker pull mariakravchuk/head-cli:latest
-3.Запустіть CLI за допомогою команди 
-*у Powershell
-docker run --rm -v ${PWD}:/app mariakravchuk/head-cli /app/new.txt -n 5
-у GItBash
-docker run --rm -v "$(pwd):/app" mariakravchuk/head-cli /app/new.txt -n 5
-**'Створення файлу для тесту'**
-Перевір, у якій саме папці ти зараз знаходишся:
-pwd
-Створи там файл new.txt
+
+### 2.Підготуйте тестовий файл
 echo "This is a test file." > new.txt
-Виконай команду
+### 3. Запустіть CLI
+У PowerShell:
+docker run --rm -v ${PWD}:/app mariakravchuk/head-cli /app/new.txt -n 5
+У Git Bash:
+docker run --rm -v "$(pwd):/app" mariakravchuk/head-cli /app/new.txt -n 5
+
 
 
 | Опція         | Опис                               |
