@@ -1,0 +1,7 @@
+asttokens==3.0.0
+click==8.3.0
+colorama==0.4.6
+executing==2.2.1
+i==2.1.0
+Pygments==2.19.2
+setuptools==80.9.0

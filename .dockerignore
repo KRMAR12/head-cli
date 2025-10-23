@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.whl
+*.egg
+*.tar.gz
+*.zipbuild/
+dist/
+*.egg-info
+__pycache__/
